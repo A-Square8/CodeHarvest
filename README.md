@@ -94,6 +94,11 @@ self.default_ignore_patterns = {
     'your_custom_folder', '*.your_extension'
 }
 
+
+
+
+
+---```
 ## Add New File Extensions
 ### Extend supported file types:
 
@@ -102,12 +107,7 @@ self.code_extensions = {
     '.py', '.js', '.your_extension'
 }
 
-
-
----
-
 ## 🙌 Final Thoughts
 
 CodeHarvest is built to streamline the often-overlooked task of codebase documentation. Whether you're a developer preparing for a handoff, a student organizing project submissions, or an AI enthusiast feeding code into large language models — this tool is made for you. With its intuitive interface, powerful filtering, and flexible export options, CodeHarvest helps you focus less on formatting and more on what matters: your code. 🌱
-
 
