@@ -83,31 +83,44 @@ Toggle **Include binary files** to:
 - Analyze codebases for academic or self-learning  
 
 ---
+## 💻 How to Install & Use the .exe (for Users)
+Go to the Releases section of this GitHub repository.
 
-## 🔧 Customization
+Download the latest .zip file containing the .exe (Windows users only).
 
-### Modify Default Ignore Patterns
-In the source code:
+Unzip the file using tools like WinRAR or 7-Zip.
+
+Double-click the .exe file to run CodeHarvest — no installation required.
+
+If Windows shows a security warning:
+
+Click "More info" > "Run anyway".
+
+This happens because the .exe is not signed, but it's safe if downloaded from this repo.
+
+⚠️ Note: The app requires Windows 10 or later. No need to install Python or other dependencies.
+---
+
+## 🛠️ Customization, Final Thoughts & Sharing the App
+
+You can easily customize CodeHarvest and share it with others.
+
+### 🔧 Ignore Patterns & File Types
+To skip specific files or folders, and to add support for more file types, update the code like this:
+
 ```python
 self.default_ignore_patterns = {
     'node_modules', '__pycache__', '.git',
     'your_custom_folder', '*.your_extension'
 }
 
-
-
-
-
----```
-## Add New File Extensions
-### Extend supported file types:
-
-
 self.code_extensions = {
     '.py', '.js', '.your_extension'
 }
 
-## 🙌 Final Thoughts
 
-CodeHarvest is built to streamline the often-overlooked task of codebase documentation. Whether you're a developer preparing for a handoff, a student organizing project submissions, or an AI enthusiast feeding code into large language models — this tool is made for you. With its intuitive interface, powerful filtering, and flexible export options, CodeHarvest helps you focus less on formatting and more on what matters: your code. 🌱
+
+🙌 Final Thoughts
+CodeHarvest makes it simple to extract, document, and share your project code. Whether you're a developer preparing a handoff, a student submitting an assignment, or using AI tools to analyze code — this tool is made for you. It keeps your projects clean, readable, and ready to share
+
 
