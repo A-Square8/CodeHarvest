@@ -1,126 +1,103 @@
-# 🌾 CodeHarvest
+# 🌾 CodeHarvest - Developer Tools Suite
 
-**A Modern Python GUI Tool for Project Code Extraction and Documentation**
+***A comprehensive toolkit designed for students and small-scale project development***
 
-CodeHarvest simplifies project documentation by extracting your entire codebase structure and content into a single, organized document. Perfect for code reviews, documentation, AI assistance, and project sharing.
-
----
+CodeHarvest is a modern, web-based developer tools suite built with Python and Streamlit. Designed specifically for students and developers working on small to medium projects, it provides essential utilities to streamline your development workflow.
 
 ## 🚀 Features
 
-### ✨ Smart Code Extraction
-- 📁 **Visual Folder Structure** – Clean tree view of your project hierarchy  
-- 🔍 **Intelligent Filtering** – Automatically ignores build files, dependencies, and config files  
-- 📝 **Multi-Language Support** – Recognizes 40+ programming languages with syntax highlighting  
-- ⚡ **Performance Optimized** – Configurable file size limits and threaded processing  
+### Current Tools
 
-### 🎛️ Customizable Settings
-- 📏 **File Size Control** – Set maximum file size limits (default: 500KB)  
-- 🚫 **Custom Ignore Patterns** – Add your own files/folders to ignore  
-- 🔧 **Binary File Handling** – Choose whether to include binary files  
-- 🎨 **Modern Dark UI** – Developer-friendly interface  
+**🔍 CodeXtractR** - Code Extraction & Analysis Tool
+* Extract complete codebase from local folders or GitHub repositories
+* Interactive file explorer with syntax highlighting
+* Copy individual files or entire codebase
+* Smart filtering with customizable ignore patterns
+* Perfect for code reviews, documentation, and AI analysis
 
-### 📤 Multiple Export Options
-- 📋 **Copy to Clipboard** – Instant sharing and pasting  
-- 💾 **Export to File** – Save as `.txt` or `.md`  
-- 🏷️ **Formatted Output** – Clean markdown with syntax highlighting markers  
+**📁 SimpliFile** - Project Structure Generator
+* Generate project structures using AI assistance
+* Simple path-based format (no complex spacing required)
+* Automatic folder and file creation
+* Preview functionality before generation
+* Ideal for rapid prototyping and project setup
 
----
+### 🔮 Coming Soon
+More developer tools are actively being developed to expand CodeHarvest's capabilities. Stay tuned for updates!
 
-## 📁 What Gets Extracted?
+## 📸 Screenshots
 
-### ✅ Included by Default
-- Source code files (`.py`, `.js`, `.java`, `.cpp`, etc.)
-- Configuration files (`.json`, `.yml`, `.xml`, etc.)
-- Documentation files (`README.md`, markdown, `.txt`, etc.)
-- Project structure and folder hierarchy
-- Small text-based files
+**CodeXtractR Tool**
+![tool1](https://github.com/user-attachments/assets/a04bddd3-8fbf-4208-b124-ebb0f6243b40)
 
-### ❌ Automatically Ignored
-node_modules/ # Node.js dependencies
-pycache/ # Python cache
-.git/ # Git repository data
-.vscode/ # VS Code settings
-.idea/ # IntelliJ settings
-dist/, build/ # Build outputs
-venv/, env/ # Virtual environments
-*.pyc, *.class # Compiled files
-.DS_Store # System files
+
+**SimpliFile Tool**
+![tool2](https://github.com/user-attachments/assets/117c54d2-0d21-4f5d-8da7-4ec45dbb13fc)
 
 
 
-### 📏 File Size Management
-- Adjust the **Max File Size** setting to control which files get included  
-- Large files are automatically skipped and listed in the output  
-- **Recommended:** 100–1000KB depending on your project size  
 
-### 🧩 Binary File Handling
-Toggle **Include binary files** to:
-- ✅ **Enabled** – Include binary files with placeholder text  
-- ❌ **Disabled** – Skip binary files entirely (recommended)  
+## 🛠️ Installation & Setup
 
----
+### Prerequisites
+* Python 3.7 or higher
+* pip package manager
 
-## 🎨 Use Cases
+### Quick Start
+1. **Clone the repository**
 
-### 📚 Documentation
-- Generate comprehensive project overviews  
-- Create documentation for team collaboration and onboarding  
-- Simplify project handoffs  
+```bash
+git clone https://github.com/yourusername/codeharvest.git
+cd codeharvest
+```
 
-### 🤖 AI Assistance
-- Feed entire codebases to AI tools like ChatGPT, Claude  
-- Enable AI-powered code reviews and analysis  
-- Improve code understanding and automation  
+2. **Install dependencies**
 
-### 👥 Code Reviews
-- Share structured code snapshots with collaborators  
-- Support offline or asynchronous code review workflows  
+```bash
+pip install streamlit requests
+```
 
-### 📖 Learning & Teaching
-- Study open-source structures and best practices  
-- Build educational examples and tutorials  
-- Analyze codebases for academic or self-learning  
+3. **Run the application**
 
----
-## 💻 How to Install & Use the .exe (for Users)
-Go to the Releases section of this GitHub repository.
+```bash
+streamlit run app.py
+```
 
-Download the latest .zip file containing the .exe (Windows users only).
+4. **Access the application**
+   * Open your browser and navigate to `http://localhost:8501`
+   * The application will automatically launch in your default browser
 
-Unzip the file using tools like WinRAR or 7-Zip.
+## 🎯 Perfect For
+* **Students** working on coding assignments and projects
+* **Developers** managing small to medium-scale applications
+* **Code reviewers** needing quick project overviews
+* **Educators** demonstrating project structures
+* **Anyone** looking to streamline their development workflow
 
-Double-click the .exe file to run CodeHarvest — no installation required.
+## 🎨 Features Highlights
+* **Dark Purple Theme** - Modern, elegant interface optimized for long coding sessions
+* **Responsive Design** - Works seamlessly across different screen sizes
+* **Intuitive Navigation** - Clean sidebar navigation between tools
+* **Real-time Processing** - Fast extraction and generation capabilities
+* **Cross-platform** - Runs on Windows, macOS, and Linux
 
-If Windows shows a security warning:
+## 📚 Usage Examples
 
-Click "More info" > "Run anyway".
+### CodeXtractR
+1. Select your source (local folder or GitHub repository)
+2. Configure extraction settings (file size limits, ignore patterns)
+3. Extract and explore your codebase
+4. Copy individual files or the complete project
 
-This happens because the .exe is not signed, but it's safe if downloaded from this repo.
+### SimpliFile
+1. Generate a custom AI prompt
+2. Use the prompt with any AI assistant (ChatGPT, Claude, etc.)
+3. Paste the generated project structure
+4. Create the complete folder structure locally
 
-⚠️ Note: The app requires Windows 10 or later. No need to install Python or other dependencies.
----
-
-## 🛠️ Customization, Final Thoughts & Sharing the App
-
-You can easily customize CodeHarvest and share it with others.
-
-### 🔧 Ignore Patterns & File Types
-To skip specific files or folders, and to add support for more file types, update the code like this:
-
-```python
-self.default_ignore_patterns = {
-    'node_modules', '__pycache__', '.git',
-    'your_custom_folder', '*.your_extension'
-}
-
-self.code_extensions = {
-    '.py', '.js', '.your_extension'
-}
-
-
-
-🙌 Final Thoughts
-CodeHarvest makes it simple to extract, document, and share your project code. Whether you're a developer preparing a handoff, a student submitting an assignment, or using AI tools to analyze code — this tool is made for you. It keeps your projects clean, readable, and ready to share
-
-
+## 🤝 Contributing
+We welcome contributions from the community! Whether you're a student or experienced developer:
+* **Bug Reports** - Help us improve by reporting issues
+* **Feature Requests** - Suggest new tools and enhancements
+* **Code Contributions** - Submit pull requests for new features
+* **Documentation** - Help improve our guides and examples
