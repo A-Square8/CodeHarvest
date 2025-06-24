@@ -47,7 +47,7 @@ More developer tools are actively being developed to expand CodeHarvest's capabi
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/codeharvest.git
+git clone https://github.com/A-Square8/CodeHarvest
 cd codeharvest
 ```
 
